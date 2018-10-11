@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0px;
+}
+
+#main, #footer {
+    padding: 20px;
+}
+
+#footer {
+    text-align: center;
+}
