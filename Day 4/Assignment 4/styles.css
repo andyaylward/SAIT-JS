@@ -1,7 +1,56 @@
-.content {
+.bg-container {
+    background-image: url('smoke.jpg');
+    background-size: cover;
+    height: 100vH;
     display: flex;
 }
 
-.content p {
-    padding: 20px;
+header {
+    position: absolute;
+    width: 100%;
+    margin-top: 75px;
 }
+
+.header-img {
+    width: 200px;
+    height: 119px;
+    background-image: url('BB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.header-title {
+    color: white;
+    font-size: 24px;
+    font-family: 'Bitter', serif;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.content-border{
+    border: solid 2px white;
+    padding-top: 4px;
+    height: 92%;
+    width: 92%;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40vH 0px;
+    max-width: 75%;
+    margin: 0 auto;
+    color: white;
+}
+
+.content p {
+    margin: 0px 20px;
+    font-family: 'Bitter', serif;
+    font-size: 24px;
+    text-shadow: 1px 1px 5px rgba(150, 150, 150, 1);
+} 
+

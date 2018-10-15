@@ -1,5 +1,4 @@
-var quotes = ['"The universe is random. Not inevitable. Its simple chaos" -Walter White', '"Just because you shot Jesse James, dont make you Jesse James" -Mike Ehrmantraut', '"Theres no honor among thieves... except for us of course." -Saul Goodman', ' "Is that all you got?" And for some reason I thought to myself, "Yeah, man, I can do better" -Jesse Pinkman', '"This is my random Quote made by me lol" -Andy']
-
+var quotes = ['"The universe is random. Not inevitable. Its simple chaos" -Walter White', '"Just because you shot Jesse James, dont make you Jesse James" -Mike Ehrmantraut', '"Theres no honor among thieves... except for us of course." -Saul Goodman', ' "Is that all you got?" And for some reason I thought to myself, "Yeah, man, I can do better" -Jesse Pinkman', '"I want my kids back. I want my life back. Please tell me…how much is enough? How big does this pile have to be?" -Skyler White']
 
 var q = document.getElementById('quote');
 var currentQuote = 0;
@@ -12,7 +11,6 @@ function nextQuote() {
     }
     q.innerHTML = quotes[currentQuote]
 }
-
 
 function forwardQ () {
     currentQuote = currentQuote + 1;
@@ -30,4 +28,4 @@ function backQ () {
     q.innerHTML = quotes[currentQuote];
 }
 
-setInterval(nextQuote, 100000)
+setInterval(nextQuote, 30000)
