@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id='myForm'>
+        <div>
+            <label for="ifDrink">Do you drink alcohol?</label>
+
+            <label for="ifDrink">Yes</label>
+            <input type="checkbox" name='ifDrink' id='yesDrink' value='yes'>
+            <label for="ifDrink">No</label>
+            <input type="checkbox" name='ifDrink' id='noDrink' value='no'>
+        </div>
+        <div class='question'>
+            <label for="drinkSelect">Would you like Beer or Wine?</label>
+            <input type="text" id='drinkSelect' name='drink' pattern='beer|wine' required>
+            <button>Submit</button>
+        </div>
+
+        <div>
+            <label for='drinkAmount'>How many beer/glasses of wine would you like?</label>
+            <input id='drinkAmount' name='amount' requiredminlength="6" maxlength="6">
+            <button>Submit</button>
+        </div>
+    </form>
+    <script src='app.js'></script>
+</body>
+</html>

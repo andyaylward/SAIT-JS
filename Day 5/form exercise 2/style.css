@@ -1,0 +1,9 @@
+#errorName, #errorAge, #errorUnderAge {
+    display: none;
+}
+
+.content {
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 300px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Questtion 1 -->
+    <div id='q1'>
+        <h1>Question #1</h1>
+        <p>Newfoundland joined Canada in 1949</p>
+        <label for="true">True</label>
+        <input type="radio" id='true1' name='q1' value='true'>
+        <label for="false">False</label>
+        <input type="radio" id='false1' name='q1' value='false'>
+        <br>
+        <input type="submit" id='submit1' value='Submit' name='submit1'> 
+    </div>
+    <!-- Questtion 2 -->
+    <div id='q2' style='display: none;'>
+        <h1>Question #2</h1>
+        <p>Rearrange the following letters to correctly spell the name of the Province</p>
+        <p>H - W - A - S - S - N - A - K - T - C - E - A</p>
+        <input type='text' id='answer2' name='answer2' required />
+        <br>
+        <input type="submit" id='submit2' value='Submit' name='submit2'/>
+    </div>
+    <!-- Questtion 3 -->
+    <div id='q3' style='display: none;'>
+        <h1>Question #3</h1>
+        <p>Select 3 of the Canadian cities that are <strong>not</strong> the captial of their respected provinces?</p>
+        <input type="checkbox" name="answer3" id="toronto" value="toronto"><label for="toronto">Toronto, ON</label>
+        <br>
+        <input type="checkbox" name="answer3" id="sask" value="sask"><label for="sask">Saskatoon, SK</label>
+        <br>
+        <input type="checkbox" name="answer3" id="stjohns" value="stjohns"><label for="stjohns">St.John's, NL</label>
+        <br>
+        <input type="checkbox" name="answer3" id="ottawa" value="ottawa"><label for="ottawa">Ottawa, ON</label>
+        <br>
+        <input type="checkbox" name="answer3" id="victoria" value="victoria"><label for="victoria">Victoria, BC</label>
+        <br>
+        <input type="checkbox" name="answer3" id="calgary" value="calgary"><label for="calgary">Calgary, AB</label>
+        <br>
+        <input type="submit" id='submit3' value='Submit' name='submit3'>
+    </div>
+    <!-- Questtion 4 -->
+    <div id='q4' style='display: none;'>
+        <h1>Question #4</h1>
+        <p>Canada has 7 different time zones</p>
+        <label for="true">True</label>
+        <input type="radio" id='true2' name='q4' value='true'>
+        <label for="false">False</label>
+        <input type="radio" id='false2' name='q4' value='false'>
+        <br>
+        <input type="submit" id='submit4' value='Submit' name='submit4'> 
+    </div>
+    <!-- Questtion 5 -->
+    <div id='q5' style='display: none;'>
+        <h1>Question #5</h1>
+        <label for='provinces'>How many Provinces are in Canada?</label>
+        <select id='provinces'>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+        </select>
+        <br>
+        <label for='territories'>How many territories?</label>
+        <select id='territories'>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+        <input type="submit" id='submit5' value='Submit' name='submit5'>
+    </div>
+    <div id='results' style='display: none'>
+        <p>You Scored a </p><span id='scoreResult'></span>
+        <p>Click <a href="index.html">here</a> to try the quiz again!</p>
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
