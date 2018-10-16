@@ -28,14 +28,14 @@ submit2.addEventListener('click', function(event){
     if (answer2.value === 'saskatchewan') {
         score = score + 20;
         document.getElementById('q2').style.display = 'none';
-        document.getElementById('q1').style.display = 'none';
         document.getElementById('q3').style.display = 'block';
         console.log(score);
     }
 
-    if (answer2.value !== 'saskatchewan') {
+    if (answer2.value !== '') {
         document.getElementById('q2').style.display = 'none';
         document.getElementById('q3').style.display = 'block';
+
     }
 })
 
@@ -55,6 +55,10 @@ submit3.addEventListener('click', function(event){
         console.log(score);
         document.getElementById('q3').style.display = 'none';
         document.getElementById('q4').style.display = 'block'; 
+    }
+    if (!ottawa.checked && !calgary.checked && !sask.checked && !stjohns.checked && !victoria.checked && !toronto.checked) {
+        document.getElementById('q3').style.display = 'block';
+        document.getElementById('q4').style.display = 'none'; 
     }
     else {
         document.getElementById('q3').style.display = 'none';
