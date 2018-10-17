@@ -1,3 +1,5 @@
+var name = prompt('Welcome! What is your name?');
+
 // Creating a gif that moves back and forth between page boundaries
 var moveForward = true;
 var direction = 10;
@@ -29,8 +31,8 @@ function dogMove () {
 }
 
 
-setInterval(dogMove, 50);
+setInterval(dogMove, 30);
 
-
+localStorage.userName = name;
 
 
