@@ -25,7 +25,7 @@ var answer2 = document.getElementById('answer2');
 
 submit2.addEventListener('click', function(event){
     
-    if (answer2.value === 'saskatchewan') {
+    if (answer2.value === 'saskatchewan' || answer2.value === 'Saskatchewan') {
         score = score + 20;
         document.getElementById('q2').style.display = 'none';
         document.getElementById('q3').style.display = 'block';
