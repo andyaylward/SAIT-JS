@@ -7,44 +7,52 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
     <title>Aylward Airlines - Home</title>
 </head>
 <body>
     <!-- Header / Nav / Hero Section -->
     <header>
         <div class="nav">
-            <div class='logo'>
+            <div class="top-left">
+                <div class='logo'></div>
+                <a href="index.html">Aylward Airlines</a>
             </div>
             <ul>
-                <li class='burger'><a href=""><i class="fas fa-bars fa-2x"></i></a></li>
-                <li class='link'><a href="index.html">Home</a></li>
+                <li class='burger'><a href="" id='burger'><i class="fas fa-bars fa-2x"></i></a></li>
+                <li class='link'><a href="about.html">About</a></li>
                 <li class='link'><a href="contact.html" id='navButton'>Contact Us</a></li>
                 <li class='link'><a href="vacation.html" id='navButton'>Vacation Packages</a></li>
                 <li class='link'><a href="register.html" id='navButton'>Customer Registration</a></li>
             </ul>
         </div>
-        <div class='mobileShow' id='mobileMenu'>
-            <div><a href="">Home</a></div>
-            <div><a href="">Contact Us</a></div>
-            <div><a href="">Vacation Packages</a></div>
-            <div><a href="">Customer Registration</a></div>
+        <div class='mobileHide' id='mobileMenu'>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="about.html">About</a></div>
+            <div><a href="contact.html">Contact Us</a></div>
+            <div><a href="vacation.html">Vacation Packages</a></div>
+            <div><a href="register.html">Customer Registration</a></div>
         </div>
     </header>
     <!-- Index Main Section -->
     <main>
         <div class='main-img-container'>
             <div class="main-img"></div>
+            <div class='main-content'>
+                <h1>Aylward Airlines</h1>
+                <p>Welcome to Aylward Airlines! This website was created in a one day workshop for my JavaScript program at SAIT. Click the button below to learn more about the outcomes of the project and how I went about creating it.</p>
+                <button class='index-button'>
+                    <a href='about.html'><span>Learn More</span></a>
+                </button>
+            </div> 
         </div>   
-        <div class='main-content'>
-
-        </div> 
     </main>
     <!-- Footer Section -->
     <footer>
-
+        <p>Website by Andy Aylward</p>
+        <p id='today'>test</p>
     </footer>
-
     <script src='app.js'></script>
 </body>
 </html>

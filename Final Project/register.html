@@ -7,39 +7,78 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <title>Aylward Airlines - Home</title>
+    <title>Aylward Airlines - Register</title>
 </head>
-<body>
+<body class='register'>
     <!-- Header / Nav / Hero Section -->
     <header>
         <div class="nav">
-            <div class='logo'>
+            <div class="top-left">
+                <div class='logo'></div>
+                <a href="index.html">Aylward Airlines</a>
             </div>
             <ul>
-                <li class='burger'><a href=""><i class="fas fa-bars fa-2x"></i></a></li>
-                <li class='link'><a href="index.html">Home</a></li>
+                <li class='burger'><a href="" id='burger'><i class="fas fa-bars fa-2x"></i></a></li>
+                <li class='link'><a href="about.html">About</a></li>
                 <li class='link'><a href="contact.html" id='navButton'>Contact Us</a></li>
                 <li class='link'><a href="vacation.html" id='navButton'>Vacation Packages</a></li>
                 <li class='link'><a href="register.html" id='navButton'>Customer Registration</a></li>
             </ul>
+        </div>
+        <div class='mobileHide' id='mobileMenu'>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="about.html">About</a></div>
+            <div><a href="contact.html">Contact Us</a></div>
+            <div><a href="vacation.html">Vacation Packages</a></div>
+            <div><a href="register.html">Customer Registration</a></div>
         </div>
     </header>
     <!-- Index Main Section -->
     <main>
         <div class='main-img-container'>
             <div class="main-img"></div>
-            <img src='./imgs/animated-plane.gif' alt="">
-        </div>   
-        <div class='main-content'>
-            
-        </div> 
+            <div class='reg-content'>
+                <h1>Register Today!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis rerum veniam consequuntur, ipsam sint iste tempore quaerat, consectetur aut itaque? Rem dicta ea libero eveniet labore dolore, perferendis delectus!</p>
+                <form action="bouncer.php" method='POST'>
+                    <div class='form-section'>
+                        <label for="firstName">First Name: <input type="text" id='firstName' required></label>
+                        <label for="lastName">Last Name: <input type="text" id='lastName' required></label>
+                    </div>
+                    <div class='form-section'>
+                        <label for="email">Email:<input type="text" id='email' required></label>
+                        <label for="phone">Phone:<input type="text" id='phone' required></label>
+                    </div>
+                    <div class='form-section'>
+                        <label for="postal">Postal Code: <input type="text" id='postal' required></label>
+                        <label for="address">Address: <input type="text" id='address' required></label>
+                        <label for="city">City: <input type="text" id='city' required></label>
+                        <label for="province">Province: <select type="select" id='province' required>
+                            <option value="" selected disabled hidden>Select</option>
+                            <option value="AB">AB</option>
+                            <option value="AB">BC</option>
+                            <option value="AB">SK</option>
+                            <option value="AB">MB</option>
+                            <option value="AB">ON</option>
+                            <option value="AB">QC</option>
+                            <option value="AB">NB</option>
+                            <option value="AB">NS</option>
+                            <option value="AB">NL</option>
+                            <option value="AB">PE</option>
+                        </label>
+                    </div>
+                    <input type="submit" id='submit' value='Submit'>
+                </form>
+            </div>
+        </div>    
     </main>
     <!-- Footer Section -->
     <footer>
-
+        <p>Website by Andy Aylward</p>
+        <p id='today'>test</p>
     </footer>
-
     <script src='app.js'></script>
 </body>
 </html>

@@ -7,38 +7,80 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <title>Aylward Airlines - Home</title>
+    <title>Aylward Airlines - Vacation Packages</title>
 </head>
-<body>
+<body class='vacation'>
     <!-- Header / Nav / Hero Section -->
     <header>
         <div class="nav">
-            <div class='logo'>
+            <div class="top-left">
+                <div class='logo'></div>
+                <a href="index.html">Aylward Airlines</a>
             </div>
             <ul>
-                <li class='burger'><a href=""><i class="fas fa-bars fa-2x"></i></a></li>
-                <li class='link'><a href="index.html">Home</a></li>
+                <li class='burger'><a href="" id='burger'><i class="fas fa-bars fa-2x"></i></a></li>
+                <li class='link'><a href="about.html">About</a></li>
                 <li class='link'><a href="contact.html" id='navButton'>Contact Us</a></li>
                 <li class='link'><a href="vacation.html" id='navButton'>Vacation Packages</a></li>
                 <li class='link'><a href="register.html" id='navButton'>Customer Registration</a></li>
             </ul>
         </div>
+        <div class='mobileHide' id='mobileMenu'>
+            <div><a href="index.html">Home</a></div>
+            <div><a href="about.html">About</a></div>
+            <div><a href="contact.html">Contact Us</a></div>
+            <div><a href="vacation.html">Vacation Packages</a></div>
+            <div><a href="register.html">Customer Registration</a></div>
+        </div>
     </header>
     <!-- Index Main Section -->
     <main>
-        <div class='main-img-container'>
+        <div class='vacation-img-container'>
             <div class="main-img"></div>
+            <img id='plane' src='./imgs/animated-plane.gif' alt="" style="position: absolute; left: 0">
+            <div class='vacation-content'>
+                <div class="vacation-card">
+                    <div class="vac-img1" id='vacImg1'></div>
+                    <div class="vac-info" id='vacInfo1'>
+                        <h2>Dublin, Ireland</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure blanditiis earum aspernatur. Ad, odit consectetur aliquam nulla natus non, accusantium voluptas dolores.</p>
+                        <button class='vacButton'>Book Now!</button>
+                    </div>
+                </div>
+                <div class="vacation-card">
+                    <div class="vac-img2" id='vacImg2'></div>
+                    <div class="vac-info" id='vacInfo2'>
+                        <h2>Rome, Italy</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure blanditiis earum aspernatur. Ad, odit consectetur aliquam nulla natus non, accusantium voluptas dolores.</p>
+                        <button class='vacButton'>Book Now!</button>
+                    </div>
+                </div>
+                <div class="vacation-card">
+                    <div class="vac-img3" id='vacImg3'></div>
+                    <div class="vac-info" id='vacInfo3'>
+                        <h2>Paris, France</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure blanditiis earum aspernatur. Ad, odit consectetur aliquam nulla natus non, accusantium voluptas dolores.</p>
+                        <button class='vacButton'>Book Now!</button>
+                    </div>
+                </div>
+                <div class="vacation-card">
+                    <div class="vac-img4" id='vacImg4'></div>
+                    <div class="vac-info" id='vacInfo4'>
+                        <h2>Ibiza, Spain</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure blanditiis earum aspernatur. Ad, odit consectetur aliquam nulla natus non, accusantium voluptas dolores.</p>
+                        <button class='vacButton'>Book Now!</button>
+                    </div>
+                </div>
+            </div> 
         </div>   
-        <div class='main-content'>
-
-        </div> 
     </main>
     <!-- Footer Section -->
     <footer>
-
+        <p>Website by Andy Aylward</p>
+        <p id='today'>test</p>
     </footer>
-
     <script src='app.js'></script>
 </body>
 </html>

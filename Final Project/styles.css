@@ -1,3 +1,5 @@
+/* NAVBAR */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -5,10 +7,21 @@
     padding: 15px 0px;
 }
 
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-left a {
+    margin-left: 10px;
+}
+
 .logo {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    width: 80px;
+    height: 80px;
+    background-image:url('./imgs/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-left: 40px;
 }
 
@@ -32,13 +45,24 @@ ul {
     transition: .5s;
 }
 
+.nav a:hover {
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* MOBILE MENU */
+#mobileMenu a:hover {
+    font-weight: bold;
+    transition: .3s;
+}
+
 #mobileMenu a{
+    width: 300px;
     color: white;
-    width: 100%;
     margin: 0px;
     text-align: center;
     display:inline-block;
-    padding: 15px;
+    padding: 15px 0px;
     border-bottom: solid 1px white;
 }
 
@@ -49,7 +73,7 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 897px) {
     .burger {
         display: block;
     }
@@ -59,37 +83,197 @@ ul {
     }
 }
 
+@media (min-width: 897px) {
+    #mobileMenu {
+        display: none;
+    }
+}
+
 #mobileMenu {
     width: 300px;
-    height: 800px;
-    background-color: #333;
+    height: 400px;
+    background-image: linear-gradient(#333 50%,transparent);
     position: absolute;
+    transition: 2s; 
     right: 0px;
 }
 
 .mobileShow {
     display: block;
+    transition: 2s;
 }
 
 .mobileHide {
-  display: none;  
+    display: none; 
+    transition: 2s; 
+}
+
+/* GENERAL */
+.index-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: 0px;
+    transition: .3s;
+}
+
+.index-button:hover {
+    padding: 12px 24px;
+    font-size: 22px;
+    box-shadow: 0px 0px 39px -10px rgba(0,0,0,0.75);
+    transition: .3s;
+}
+
+.index-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.vacButton {
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: 0px;
+    transition: .3s;
+    padding: 5px;
+}
+
+.vacButton:hover {
+    padding: 7px;
+    transition: .2s;
+    box-shadow: 0px 0px 39px -10px rgba(0,0,0,0.75);
 }
 
 .main-img-container {
-    height: 80vH;
+    height: 78vH;
     width: 100%;
     background-image: linear-gradient(white,transparent 20%), url('./imgs/main.jpg');
-    background-position: 20% 20%;
+    background-position: 40% 20%;
     background-size: cover;
 }
 
 .main-content {
-    width: 100%;
+    max-width: 600px;
     height: 300px;
+    padding: 100px 200px;
+    margin: 0 auto;
+}
+
+.main-content h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+p, label, span {
+    font-family: 'Roboto', sans-serif;
 }
 
 footer{
     width: 100%;
-    height: 85px;
+    height: 100px;
     background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer p {
+    padding: 0px 20px;
+}
+
+/* Contact Us Page */
+.agent-list {
+    display: block;
+    width: 110%;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 0px 0px 86px 40px rgba(255,255,255,.8);
+}
+
+.agent-list li {
+    padding: 20px 0px;
+}
+
+/* Vacation Packages Page */
+.vacation-img-container {
+    height: 125vH;
+    width: 100%;
+    background-image: linear-gradient(white,transparent 20%), url('./imgs/main.jpg');
+    background-position: 40% 20%;
+    background-size: cover;
+}
+
+.vacation-content {
+    padding-top: 130px;
+}
+
+.vacation-card {
+    margin: 0 auto;
+    width: 600px;
+    margin-bottom: 30px;
+    background-color: rgba(255,255,255,.8);
+    box-shadow: 0px 0px 86px 10px rgba(255,255,255,.8);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.vacation-card h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+.vac-img1, .vac-img2, .vac-img3, .vac-img4 {
+    min-width: 150px;
+    height: 150px;
+}
+
+.vac-img1{
+    background-image: url('imgs/dublin1.jfif');
+    background-size: cover;
+}
+
+.vac-img2{
+    background-image: url('imgs/rome1.jfif');
+    background-size: cover;
+}
+.vac-img3{
+    background-image: url('imgs/paris1.jfif');
+    background-size: cover;
+}
+.vac-img4{
+    background-image: url('imgs/ibiza1.jfif');
+    background-size: cover;
+}
+
+.vac-info {
+    padding:15px;
+    height: 150px;
+}
+
+.vac-info h2 {
+    margin-top: 0px;
+}
+
+/* Registration Page */
+
+
+label {
+    padding-right: 200px;
+    margin-bottom: 100px;
+}
+
+
+.reg-content {
+    width: 380px;
+    height: 300px;
+    padding: 100px 200px;
+    margin: 0 auto;
+}
+
+.reg-content h1{
+    font-family: 'Raleway', sans-serif;
 }
